@@ -1,0 +1,69 @@
+{
+  "name": "react-redux-connect-keyed-ownprops",
+  "description": "react-redux connect with factories, safely keyed by given ownProps.",
+  "version": "1.0.0",
+  "main": "dist/main.js",
+  "author": "Anders D. Johnson <anders.d.johnson.developer@gmail.com>",
+  "license": "MIT",
+  "files": [
+    "/dist/main.js"
+  ],
+  "scripts": {
+    "build:dev": "webpack --mode development -d -o dist/demo.js src/demo.js",
+    "build": "webpack --mode production -p && webpack --mode production -p --env.demo -o dist/demo.js src/demo.js"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.3.0",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.5",
+    "enzyme": "^3.8.0",
+    "enzyme-adapter-react-16": "^1.9.1",
+    "enzyme-to-json": "^3.3.5",
+    "eslint": "^5.13.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jest": "^22.2.2",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-react": "^7.12.4",
+    "eslint-plugin-standard": "^4.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^24.1.0",
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1",
+    "react-redux": "^6.0.0",
+    "redux": "^4.0.1",
+    "webpack": "^4.29.3",
+    "webpack-cli": "^3.2.3",
+    "webpack-html-plugin": "^0.1.1",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "peerDependencies": {
+    "prop-types": "^15.6.2",
+    "react": "^16.8.1",
+    "react-redux": "^6.0.0"
+  },
+  "dependencies": {
+    "shallowequal": "^1.1.0"
+  },
+  "keywords": [
+    "react",
+    "reactjs",
+    "redux",
+    "react-redux",
+    "connect",
+    "hoc",
+    "ownProps",
+    "factory functions",
+    "mapStateToProps",
+    "makeMapStateToProps",
+    "mapDispatchToProps",
+    "makeMapDispatchToProps",
+    "mergeProps",
+    "key"
+  ]
+}

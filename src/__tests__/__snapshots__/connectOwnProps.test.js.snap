@@ -1,0 +1,238 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`connectOwnProps works 1`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <ConnectOwnProps(Connect(Comp))
+    myProp="myValue"
+  >
+    <Connect(Comp)
+      key="1"
+      myProp="myValue"
+    >
+      <Comp
+        dispatch={[Function]}
+        myProp="myValue"
+      >
+        <div>
+          myValue
+        </div>
+      </Comp>
+    </Connect(Comp)>
+  </ConnectOwnProps(Connect(Comp))>
+</Provider>
+`;
+
+exports[`connectOwnProps works 2`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <ConnectOwnProps(Connect(Comp))
+    myProp="myValue"
+  >
+    <Connect(Comp)
+      key="1"
+      myProp="myValue"
+    >
+      <Comp
+        dispatch={[Function]}
+        myProp="myValue"
+      >
+        <div>
+          myValue
+        </div>
+      </Comp>
+    </Connect(Comp)>
+  </ConnectOwnProps(Connect(Comp))>
+</Provider>
+`;
+
+exports[`connectOwnProps works 3`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <ConnectOwnProps(Connect(Comp))
+    myProp="myValue2"
+  >
+    <Connect(Comp)
+      key="2"
+      myProp="myValue2"
+    >
+      <Comp
+        dispatch={[Function]}
+        myProp="myValue2"
+      >
+        <div>
+          myValue2
+        </div>
+      </Comp>
+    </Connect(Comp)>
+  </ConnectOwnProps(Connect(Comp))>
+</Provider>
+`;
+
+exports[`makeConnectOwnProps works 1`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <ConnectOwnProps(Connect(Comp))
+    myProp="myValue"
+  >
+    <Connect(Comp)
+      key="1"
+      myProp="myValue"
+    >
+      <Comp
+        dispatch={[Function]}
+        myProp="myValue"
+      >
+        <div>
+          myValue
+        </div>
+      </Comp>
+    </Connect(Comp)>
+  </ConnectOwnProps(Connect(Comp))>
+</Provider>
+`;
+
+exports[`makeConnectOwnProps works 2`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <ConnectOwnProps(Connect(Comp))
+    myProp="myValue"
+  >
+    <Connect(Comp)
+      key="1"
+      myProp="myValue"
+    >
+      <Comp
+        dispatch={[Function]}
+        myProp="myValue"
+      >
+        <div>
+          myValue
+        </div>
+      </Comp>
+    </Connect(Comp)>
+  </ConnectOwnProps(Connect(Comp))>
+</Provider>
+`;
+
+exports[`makeConnectOwnProps works 3`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <ConnectOwnProps(Connect(Comp))
+    myProp="myValue2"
+  >
+    <Connect(Comp)
+      key="2"
+      myProp="myValue2"
+    >
+      <Comp
+        dispatch={[Function]}
+        myProp="myValue2"
+      >
+        <div>
+          myValue2
+        </div>
+      </Comp>
+    </Connect(Comp)>
+  </ConnectOwnProps(Connect(Comp))>
+</Provider>
+`;
+
+exports[`makeKeyedOwnProps works 1`] = `
+<ConnectOwnProps(undefined)
+  myProp="myValue"
+>
+  <Comp
+    key="1"
+    myProp="myValue"
+  >
+    <div>
+      myValue
+    </div>
+  </Comp>
+</ConnectOwnProps(undefined)>
+`;
+
+exports[`makeKeyedOwnProps works 2`] = `
+<ConnectOwnProps(undefined)
+  myProp="myValue"
+>
+  <Comp
+    key="1"
+    myProp="myValue"
+  >
+    <div>
+      myValue
+    </div>
+  </Comp>
+</ConnectOwnProps(undefined)>
+`;
+
+exports[`makeKeyedOwnProps works 3`] = `
+<ConnectOwnProps(undefined)
+  myProp="myValue2"
+>
+  <Comp
+    key="2"
+    myProp="myValue2"
+  >
+    <div>
+      myValue2
+    </div>
+  </Comp>
+</ConnectOwnProps(undefined)>
+`;
