@@ -5,6 +5,7 @@
   "main": "dist/main.js",
   "author": "Anders D. Johnson <anders.d.johnson.developer@gmail.com>",
   "license": "MIT",
+  "repository": "AndersDJohnson/react-redux-connect-keyed-ownprops",
   "files": [
     "/dist/main.js"
   ],
