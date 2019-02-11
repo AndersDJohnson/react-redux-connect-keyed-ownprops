@@ -40,6 +40,10 @@ so the internal `key` updates in sync with it.
 
 ## Example
 
+See a live demo here: https://andersdjohnson.github.io/react-redux-connect-keyed-ownprops
+
+Here's some sample code:
+
 ```js
 import connectOwnProps from 'react-redux-connect-keyed-ownprops'
 
