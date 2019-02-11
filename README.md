@@ -2,6 +2,10 @@
 
 > react-redux connect with factories, safely keyed by given ownProps.
 
+[![npm](https://img.shields.io/npm/v/react-redux-connect-keyed-ownprops.svg)](https://www.npmjs.com/package/react-redux-connect-keyed-ownprops)
+[![Travis CI](https://img.shields.io/travis/AndersDJohnson/react-redux-connect-keyed-ownprops.svg)](https://travis-ci.org/AndersDJohnson/react-redux-connect-keyed-ownprops)
+[![Codecov](https://img.shields.io/codecov/c/github/AndersDJohnson/react-redux-connect-keyed-ownprops.svg)](https://codecov.io/gh/AndersDJohnson/react-redux-connect-keyed-ownprops)
+
 ## The Problem
 
 When connecting a React component to Redux, you may need to refer to `ownProps`.
