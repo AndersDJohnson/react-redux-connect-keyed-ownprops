@@ -48,6 +48,7 @@
     "react-redux": "^6.0.0"
   },
   "dependencies": {
+    "enzyme-adapter-configure": "^1.0.2",
     "shallowequal": "^1.1.0"
   },
   "keywords": [
