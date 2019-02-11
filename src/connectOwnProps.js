@@ -55,7 +55,7 @@ const makeKeyedOwnProps = (propNames, ConnectedComp) => {
     }
 
     return (
-      <ConnectedComp key={key} {...props}>
+      <ConnectedComp {...props} key={key}>
         {props.children}
       </ConnectedComp>
     )
