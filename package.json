@@ -10,7 +10,10 @@
   ],
   "scripts": {
     "build:dev": "webpack --mode development -d -o dist/demo.js src/demo.js",
-    "build": "webpack --mode production -p && webpack --mode production -p --env.demo -o dist/demo.js src/demo.js"
+    "build": "webpack --mode production -p && webpack --mode production -p --env.demo -o dist/demo.js src/demo.js",
+    "test": "yarn lint && yarn unit",
+    "unit": "jest && codecov",
+    "lint": "eslint src"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",
@@ -20,6 +23,7 @@
     "@babel/preset-react": "^7.0.0",
     "babel-eslint": "^10.0.1",
     "babel-loader": "^8.0.5",
+    "codecov": "^3.1.0",
     "enzyme": "^3.8.0",
     "enzyme-adapter-react-16": "^1.9.1",
     "enzyme-to-json": "^3.3.5",
