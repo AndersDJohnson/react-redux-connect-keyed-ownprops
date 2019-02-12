@@ -38,19 +38,14 @@ const makeMakeMapFunction = (propNames, makeOrMapFunction) => {
 
 const makeKeyedOwnProps = (propNames, ConnectedComp) => {
   let key = 0
-  let lastPropsKey
   let lastPickedOwnProps
 
   const ConnectOwnProps = props => {
     const pickedOwnProps = pickOwnProps(propNames, props)
 
-    if (
-      props.key !== lastPropsKey ||
-      !shallowequal(pickedOwnProps, lastPickedOwnProps)
-    ) {
+    if (!shallowequal(pickedOwnProps, lastPickedOwnProps)) {
       key++
 
-      lastPropsKey = props.key
       lastPickedOwnProps = pickedOwnProps
     }
 

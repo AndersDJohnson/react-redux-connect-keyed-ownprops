@@ -34,9 +34,6 @@ triggers a new component instance to be created, which re-executes its internal
 It also provides the managed subset of `ownProps` as a second argument to your `mapStateTo*` or `makeMapStateTo*` functions, instead of the full set, which encourages
 safe usage by disallowing access to initial values decoupled from re-instancing.
 
-Any `key` supplied to the resulting component will also be monitored
-so the internal `key` updates in sync with it.
-
 ## Example
 
 See a live demo here: https://andersdjohnson.github.io/react-redux-connect-keyed-ownprops
