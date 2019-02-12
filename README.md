@@ -36,7 +36,7 @@ safe usage by disallowing access to initial values decoupled from re-instancing.
 
 ## Example
 
-See a live demo here: https://andersdjohnson.github.io/react-redux-connect-keyed-ownprops
+See a live demo [here](https://andersdjohnson.com/react-redux-connect-keyed-ownprops) (and [source](src/demo.js)).
 
 Here's some sample code:
 
