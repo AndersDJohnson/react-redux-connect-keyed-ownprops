@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { connect } from 'react-redux'
-import shallowequal from 'shallowequal'
+import { connect, shallowEqual } from 'react-redux'
 
 const pickOwnProps = (propNames, ownProps) =>
   typeof propNames === 'function'
@@ -43,7 +42,7 @@ const makeKeyedOwnProps = (propNames, ConnectedComp) => {
   const ConnectOwnProps = props => {
     const pickedOwnProps = pickOwnProps(propNames, props)
 
-    if (!shallowequal(pickedOwnProps, lastPickedOwnProps)) {
+    if (!shallowEqual(pickedOwnProps, lastPickedOwnProps)) {
       key++
 
       lastPickedOwnProps = pickedOwnProps
