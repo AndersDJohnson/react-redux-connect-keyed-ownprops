@@ -132,19 +132,13 @@ describe('makeKeyedOwnProps', () => {
 
     expect($Comp().key()).toEqual('1')
 
-    expect(wrapper).toMatchSnapshot()
-
     wrapper.setProps({ myProp: 'myValue' })
 
     expect($Comp().key()).toEqual('1')
 
-    expect(wrapper).toMatchSnapshot()
-
     wrapper.setProps({ myProp: 'myValue2' })
 
     expect($Comp().key()).toEqual('2')
-
-    expect(wrapper).toMatchSnapshot()
   })
 })
 
@@ -154,7 +148,7 @@ describe('makeConnectOwnProps', () => {
 
     const ConnectOwnProps = madeConnectOwnProps(Comp)
 
-    const store = createStore(() => {})
+    const store = createStore(() => { })
 
     const wrapper = mount(
       <Provider store={store}>
@@ -166,19 +160,13 @@ describe('makeConnectOwnProps', () => {
 
     expect($Comp().key()).toEqual('1')
 
-    expect(wrapper).toMatchSnapshot()
-
     wrapper.setProps({ children: <ConnectOwnProps myProp="myValue" /> })
 
     expect($Comp().key()).toEqual('1')
 
-    expect(wrapper).toMatchSnapshot()
-
     wrapper.setProps({ children: <ConnectOwnProps myProp="myValue2" /> })
 
     expect($Comp().key()).toEqual('2')
-
-    expect(wrapper).toMatchSnapshot()
   })
 })
 
@@ -186,7 +174,7 @@ describe('connectOwnProps', () => {
   it('works', () => {
     const MyComponent = connectOwnProps(['myProp'], () => ({}))(Comp)
 
-    const store = createStore(() => {})
+    const store = createStore(() => { })
 
     const wrapper = mount(
       <Provider store={store}>
@@ -198,18 +186,12 @@ describe('connectOwnProps', () => {
 
     expect($Comp().key()).toEqual('1')
 
-    expect(wrapper).toMatchSnapshot()
-
     wrapper.setProps({ children: <MyComponent myProp="myValue" /> })
 
     expect($Comp().key()).toEqual('1')
 
-    expect(wrapper).toMatchSnapshot()
-
     wrapper.setProps({ children: <MyComponent myProp="myValue2" /> })
 
     expect($Comp().key()).toEqual('2')
-
-    expect(wrapper).toMatchSnapshot()
   })
 })

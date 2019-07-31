@@ -6,12 +6,12 @@ const pickOwnProps = (propNames, ownProps) =>
   typeof propNames === 'function'
     ? propNames(ownProps)
     : (Array.isArray(propNames) ? propNames : [propNames]).reduce(
-        (acc, propName) => ({
-          ...acc,
-          [propName]: ownProps[propName]
-        }),
-        {}
-      )
+      (acc, propName) => ({
+        ...acc,
+        [propName]: ownProps[propName]
+      }),
+      {}
+    )
 
 const makeMakeMapFunction = (propNames, makeOrMapFunction) => {
   if (typeof makeOrMapFunction !== 'function') return makeOrMapFunction
